@@ -1,27 +1,30 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Grid from '@components/Grid'
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Mario Díez - Frontend developer.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Mario Diez - FrontEnd Developer.
-        </p>
+        <Header title="Mario Diez" />
       </main>
+
+      <Grid />
 
       <Footer />
 
       <style jsx>{`
         .container {
-          height: 100vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
